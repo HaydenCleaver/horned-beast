@@ -1,22 +1,22 @@
 import {Component} from 'react';
 
 class HornedBeast extends Component{
-    constructor(title, img, text){
+    constructor(name, img, text, title){
 
-        super();
-        this.title = title;
+        super(name, img, text);
+        this.name = name;
         this.img = img;
         this.text = text;
+        this.title = title;
 
     }
 
     render(){
         return(
             <div>
-                <h2>HornedBeast.title</h2>
-                {}
-                <img src="" alt="" title=""/>
-                <p></p>
+                <h2>{HornedBeast.name}</h2>
+                <img src={this.img} alt={this.title} title={this.title}/>
+                <p>{this.text}</p>
             </div>
         )
     }
