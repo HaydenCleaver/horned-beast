@@ -2,7 +2,6 @@ import {Component} from 'react';
 import HornedBeast from './HornedBeast';
 import list from '../data.json';
 import Favorite from './Favorite';
-import BeastList from './BeastList';
 
 class Main extends Component {
     constructor() {
@@ -11,10 +10,9 @@ class Main extends Component {
         this.state = {
             currentBeast: null,
             beastList: list,
-            
         }
     }
-    
+
     selectFavorite = (beast) => {
         this.setState({currentBeast : beast});
     }
@@ -23,8 +21,17 @@ class Main extends Component {
         console.log(this.state.currentBeast);
         return(
             <div>
+                {this.state.beastList.map(beast =>
+                    <HornedBeast 
+                    title={beast.title} 
+                    image_url={beast.image_url}
+                    description={beast.description}
+                    selectBeast={this.selectFavorite} 
+                    />
+
+                    )}
                 <Favorite currentBeast={this.state.currentBeast} />
-                <BeastList list={this.state.beastList} selectBeast={this.selectFavorite} />
+                
             </div>
         )
     }

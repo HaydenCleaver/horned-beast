@@ -8,7 +8,7 @@ This application will display information and pictures of various types of horne
 
 ### Feature #1 : Display images
 
-Estimate of time needed to complete: 30 minutes
+Estimate of time needed to complete: 30 min
 
 Start time: 10:00 pm
 
@@ -18,20 +18,20 @@ Actual time needed to complete: 47 min
 
 ### Feature #2 : Voting
 
-Estimate of time needed to complete: 40
+Estimate of time needed to complete: 40 min
 
-Start time: 11:10 pm
+Start time: 11:10 pm-11:50 pm; 6:00pm
 
-Finish time: _____
+Finish time: 7:00 pm
 
-Actual time needed to complete: 50 min +
+Actual time needed to complete: 1 hr 40 min
 
 ### Feature #3 : Bootstrap
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 1 hr
 
-Start time: _____
+Start time: 12:00am-12:30am; 7:15pm
 
-Finish time: _____
+Finish time: 8:30 pm?
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1 hr 45 min
