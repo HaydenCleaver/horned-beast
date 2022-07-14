@@ -25,7 +25,7 @@ class HornedBeast extends Component{
                 <Col>
                     <h2>{this.props.keyword}</h2>
                     <Figure class="beast">
-                        <img src={this.props.image_url} alt={this.props.title} title={this.props.title} width={200} className="img"/>
+                        <img src={this.props.image_url} alt={this.props.title} title={this.props.title} width={200} className="img" onClick={this.props.selectBeast}/>
                         <Figure.Caption>{this.props.description}</Figure.Caption>
                         <Figure.Caption>Favorited: {this.state.votes} &hearts;</Figure.Caption>
                         <Button variant="primary" onClick={this.handleClick}>Vote for your favorite Horned Beast</Button>
