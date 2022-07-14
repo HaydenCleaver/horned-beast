@@ -2,6 +2,11 @@
   "name": "horned-beast",
   "version": "0.1.0",
   "private": true,
+
+  "overrides": {
+    "autoprefixer": "10.4.5"
+  },
+
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -25,9 +30,7 @@
       "react-app/jest"
     ]
   },
-  "overrides": {
-    "autoprefixer": "10.4.5"
-  },
+
   "browserslist": {
     "production": [
       ">0.2%",
