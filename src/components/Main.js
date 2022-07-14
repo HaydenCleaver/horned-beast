@@ -1,7 +1,7 @@
 import {Component} from 'react';
 import HornedBeast from './HornedBeast';
 import list from '../data.json';
-import Favorite from './Favorite';
+import SelectedBeast from './SelectedBeast';
 
 class Main extends Component {
     constructor() {
@@ -14,7 +14,13 @@ class Main extends Component {
     }
 
     selectFavorite = (beast) => {
-        this.setState({currentBeast : beast});
+        console.log(beast);
+        list.forEach(function(element){
+            if(beast === element.image_url) {
+                this.setState({currentBeast : element});
+            }
+        })
+        console.log(this.state.currentBeast);
     }
 
     render(){
@@ -30,7 +36,8 @@ class Main extends Component {
                     />
 
                     )}
-                <Favorite currentBeast={this.state.currentBeast} />
+                <SelectedBeast 
+                currentBeast={this.state.currentBeast} />
                 
             </div>
         )

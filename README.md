@@ -35,3 +35,13 @@ Start time: 12:00am-12:30am; 7:15pm
 Finish time: 8:30 pm?
 
 Actual time needed to complete: 1 hr 45 min
+
+### Feature #4 : Display Modal
+
+Estimate of time needed to complete: 2 hrs
+
+Start time: 9:30pm
+
+Finish time: _____
+
+Actual time needed to complete: _____
