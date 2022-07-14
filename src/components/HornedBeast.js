@@ -1,5 +1,8 @@
 import {Component} from 'react';
+import './HornedBeast.css';
+import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
+import Figure from 'react-bootstrap/Figure';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -19,15 +22,15 @@ class HornedBeast extends Component{
 
     render(){
         return(
-            <Container>
-                <Col lg={true}>
+                <Col>
                     <h2>{this.props.keyword}</h2>
-                    <img src={this.props.image_url} alt={this.props.title} title={this.props.title} width="200px"/>
-                    <p>{this.props.description}</p>
-                    <p>Favorited: {this.state.votes} &hearts;</p>
-                    <Button variant="primary" onClick={this.handleClick}>Vote for your favorite Horned Beast</Button>
+                    <Figure class="beast">
+                        <img src={this.props.image_url} alt={this.props.title} title={this.props.title} width={200} className="img"/>
+                        <Figure.Caption>{this.props.description}</Figure.Caption>
+                        <Figure.Caption>Favorited: {this.state.votes} &hearts;</Figure.Caption>
+                        <Button variant="primary" onClick={this.handleClick}>Vote for your favorite Horned Beast</Button>
+                    </Figure>
                 </Col>
-            </Container>
         )
     }
 }

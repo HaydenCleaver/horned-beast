@@ -10,12 +10,7 @@ class Main extends Component {
         this.state = {
             currentBeast: null,
             beastList: list,
-            votes: 0,
         }
-    }
-    
-    handleClick = (event) => {
-        this.setState({votes: this.state.votes+1});
     }
 
     selectFavorite = (beast) => {
@@ -32,8 +27,8 @@ class Main extends Component {
                     image_url={beast.image_url}
                     description={beast.description}
                     selectBeast={this.selectFavorite} 
-                    votes={this.state.votes} 
-                    click={this.handleClick}/>
+                    />
+
                     )}
                 <Favorite currentBeast={this.state.currentBeast} />
                 
