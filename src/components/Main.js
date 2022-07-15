@@ -14,29 +14,22 @@ class Main extends Component {
         }
     }
 
-    selectFavorite = (beast) => {
-        console.log(beast);
-        this.props.beastList.forEach(function(element){
-            if(beast === element.image_url) {
-                this.setState({currentBeast : element});
-            }
-        })
-        console.log(this.state.currentBeast);
-    }
-
     render(){
         console.log(this.state.currentBeast);
         return(
             <Container>
-                <Form>
-                    <Form.Label>Search for: </Form.Label>
+                <Form.Select>
+                    {/* <Form.Label>Search for: </Form.Label>
                     <Form.Control></Form.Control>
-                    
-                </Form>
+                     */}
+                    <option>Sort by:</option>
+                    <option>Horn Number</option>
+                </Form.Select>
                 <Row>
                     {this.props.beastList.map(beast =>
                         <Col>
-                            <HornedBeast 
+                            <HornedBeast
+                            horns = {beast.horns} 
                             keyword = {beast.keyword}
                             title={beast.title} 
                             image_url={beast.image_url}
