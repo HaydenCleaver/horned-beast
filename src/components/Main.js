@@ -1,21 +1,21 @@
 import {Component} from 'react';
 import HornedBeast from './HornedBeast';
-import list from '../data.json';
-import SelectedBeast from './SelectedBeast';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 class Main extends Component {
-    constructor() {
-        console.log(list);
-        super();
+    constructor(props) {
+        super(props);
+
         this.state = {
-            currentBeast: null,
-            beastList: list,
+            
         }
     }
 
     selectFavorite = (beast) => {
         console.log(beast);
-        list.forEach(function(element){
+        this.props.beastList.forEach(function(element){
             if(beast === element.image_url) {
                 this.setState({currentBeast : element});
             }
@@ -26,20 +26,21 @@ class Main extends Component {
     render(){
         console.log(this.state.currentBeast);
         return(
-            <div>
-                {this.state.beastList.map(beast =>
-                    <HornedBeast 
-                    title={beast.title} 
-                    image_url={beast.image_url}
-                    description={beast.description}
-                    selectBeast={this.selectFavorite} 
-                    />
-
+            <Container>
+                <Row>
+                    {this.props.beastList.map(beast =>
+                        <Col>
+                            <HornedBeast 
+                            keyword = {beast.keyword}
+                            title={beast.title} 
+                            image_url={beast.image_url}
+                            description={beast.description}
+                            handleBeast={this.props.handleBeast} 
+                            />
+                        </Col>
                     )}
-                <SelectedBeast 
-                currentBeast={this.state.currentBeast} />
-                
-            </div>
+                </Row>
+            </Container>
         )
     }
 }
