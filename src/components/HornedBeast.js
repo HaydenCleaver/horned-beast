@@ -1,11 +1,7 @@
 import {Component} from 'react';
 import './HornedBeast.css';
-import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
-import Figure from 'react-bootstrap/Figure';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
 
 class HornedBeast extends Component{
     constructor(){
@@ -20,17 +16,23 @@ class HornedBeast extends Component{
         this.setState({votes: this.state.votes+1});
     }
 
+    handleBeast = (event) => {
+        console.log(this)
+        this.props.handleBeast(this);
+    }
+
     render(){
         return(
-                <Col>
-                    <h2>{this.props.keyword}</h2>
-                    <Figure class="beast">
-                        <img src={this.props.image_url} alt={this.props.title} title={this.props.title} width={200} className="img" onClick={this.props.selectBeast}/>
-                        <Figure.Caption>{this.props.description}</Figure.Caption>
-                        <Figure.Caption>Favorited: {this.state.votes} &hearts;</Figure.Caption>
+            <Card className="beast">
+                <img src={this.props.image_url} alt={this.props.title} title={this.props.title} width={200} className="img" onClick={this.handleBeast}/>
+                <Card.Body>
+                    <Card.Title>{this.props.keyword}</Card.Title>
+                        
+                        <Card.Text>{this.props.description}</Card.Text>
+                        <Card.Text>Favorited: {this.state.votes} &hearts;</Card.Text>
                         <Button variant="primary" onClick={this.handleClick}>Vote for your favorite Horned Beast</Button>
-                    </Figure>
-                </Col>
+                </Card.Body>
+            </Card>
         )
     }
 }

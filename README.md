@@ -40,8 +40,10 @@ Actual time needed to complete: 1 hr 45 min
 
 Estimate of time needed to complete: 2 hrs
 
-Start time: 9:30pm
+Start time: 9:30pm - 12am; 6pm
 
-Finish time: _____
+Finish time: 9:30pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 6 hours
+
+* Credit to [Joshua Frazer](https://github.com/Frazmatic) for supplying code during class review today, from which I learned a lot.
