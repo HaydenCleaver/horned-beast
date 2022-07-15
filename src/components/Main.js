@@ -3,6 +3,7 @@ import HornedBeast from './HornedBeast';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
 
 class Main extends Component {
     constructor(props) {
@@ -27,6 +28,11 @@ class Main extends Component {
         console.log(this.state.currentBeast);
         return(
             <Container>
+                <Form>
+                    <Form.Label>Search for: </Form.Label>
+                    <Form.Control></Form.Control>
+                    
+                </Form>
                 <Row>
                     {this.props.beastList.map(beast =>
                         <Col>
