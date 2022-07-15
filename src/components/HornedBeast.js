@@ -23,7 +23,7 @@ class HornedBeast extends Component{
 
     render(){
         return(
-            <Card className="beast" >
+            <Card className="beast">
                 <img src={this.props.image_url} alt={this.props.title} title={this.props.title} width={200} className="img" onClick={this.handleBeast}/>
                 <Card.Body>
                     <Card.Title>{this.props.keyword}</Card.Title>

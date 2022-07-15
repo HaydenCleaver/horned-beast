@@ -45,3 +45,5 @@ Start time: 9:30pm - 12am; 6pm
 Finish time: 9:30pm
 
 Actual time needed to complete: 6 hours
+
+* Credit to [Joshua Frazer](https://github.com/Frazmatic) for supplying code during class review today, from which I learned a lot.
