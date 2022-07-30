@@ -18,14 +18,14 @@ class Main extends Component {
         console.log(this.state.currentBeast);
         return(
             <Container>
-                <Form.Select>
+                <Form.Select style={{marginBottom: "5px"}}>
                     {/* <Form.Label>Search for: </Form.Label>
                     <Form.Control></Form.Control>
                      */}
                     <option>Sort by:</option>
                     <option>Horn Number</option>
                 </Form.Select>
-                <Row>
+                <Row xs={1} sm={2} md={3} lg={4} xl={5}>
                     {this.props.beastList.map(beast =>
                         <Col>
                             <HornedBeast
