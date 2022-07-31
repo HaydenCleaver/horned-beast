@@ -46,4 +46,15 @@ Finish time: 9:30pm
 
 Actual time needed to complete: 6 hours
 
+### Feature #5 : Filter
+
+Estimate of time needed to complete: 2 hrs
+
+Start time: 9:45pm; 8:30am
+
+Finish time: 9:20am
+
+Actual time needed to complete: 1.5 hrs
+
+
 * Credit to [Joshua Frazer](https://github.com/Frazmatic) for supplying code during class review today, from which I learned a lot.
