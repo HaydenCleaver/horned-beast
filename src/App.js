@@ -34,7 +34,8 @@ class App extends Component {
         <Header />
         <Main 
           beastList ={list} 
-          handleBeast={this.handleBeast}/>
+          handleBeast={this.handleBeast}
+          beastPic = {this.state.currentBeast}/>
         <SelectedBeast 
           beastName = {this.state.beastTitle}
           beastPic = {this.state.currentBeast} 
