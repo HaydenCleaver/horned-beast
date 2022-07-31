@@ -32,7 +32,7 @@ Estimate of time needed to complete: 1 hr
 
 Start time: 12:00am-12:30am; 7:15pm
 
-Finish time: 8:30 pm?
+Finish time: 8:30 pm
 
 Actual time needed to complete: 1 hr 45 min
 
